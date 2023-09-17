@@ -1,7 +1,7 @@
 :root {
     --cor-site: #404040;
     --cor-fonte: #0c0a09;
-    --cor-menu: #78716c;
+    --cor-menu: #A6A6A6;
     --cor-fundo: #292524;
     --cor-clara: #f5f5f5;
 }
@@ -33,7 +33,7 @@ html {
 .header_logo {
     width: 13em;
     margin: 1em;
-    border-radius: 5px;
+    border-radius: 100px;
 }
 
 #hamburguer {
@@ -130,6 +130,14 @@ ul {
     }
 }
 
+.sobre_mim {
+    background-image: url(imagens/sobre.png);
+    background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-color: initial;
+}
+
 .trailer {
     background-color: var(--cor-clara);
     padding-bottom: 1.5em;
@@ -198,7 +206,7 @@ p {
     }
 
     .trailer {
-        background-image: url(imagens/fundo_trailer.png);
+        background-image: url(imagens/);
         background-size: cover;
         background-position: center top;
         background-repeat: no-repeat;
