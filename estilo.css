@@ -1,0 +1,311 @@
+:root {
+    --cor-site: #404040;
+    --cor-fonte: #0c0a09;
+    --cor-menu: #78716c;
+    --cor-fundo: #292524;
+    --cor-clara: #f5f5f5;
+}
+
+html {
+    font-family: sans-serif;
+    background-color: #404040;
+}
+
+#id {
+    color: var(--cor-fonte);
+    font-size: 3.4em;
+    font-family: 'Handjet', cursive;
+}
+
+.maxWidth {
+    max-width: 90em;
+    /*1440px / 16 = 90em*/
+}
+
+
+.header {
+    text-align: center;
+    margin: auto;
+    /*background-color: #010326;
+    color: #3F83BF;*/
+}
+
+.header_logo {
+    width: 13em;
+    margin: 1em;
+    border-radius: 5px;
+}
+
+#hamburguer {
+    background-color: var(--cor-fundo);
+    color: #fff;
+    display: block;
+    text-align: center;
+    padding: 0.3em;
+    cursor: pointer;
+    font-size: 2em;
+}
+
+
+.header_nav {
+    background-color: var(--cor-fundo);
+    display: none;
+}
+
+.header_nav.show {
+    display: block;
+}
+
+
+ul {
+    margin: 0;
+}
+
+.header_nav ul {
+    list-style-type: none;
+    padding: 0;
+    text-transform: uppercase;
+    letter-spacing: .2em;
+    font-size: .8em;
+    font-weight: 600;
+}
+
+.header_nav a {
+    color: var(--cor-menu);
+    text-decoration: none;
+    display: block;
+    padding: 1em;
+}
+
+.header_nav a:hover {
+    background-color: color-mix(in srgb, var(--cor-fonte), #ffffff 20%);
+}
+
+@media screen and (min-width: 48em) {
+
+    /*768px maior que*/
+    #hamburguer {
+        display: none;
+    }
+
+
+    .header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: var(--cor-menu);
+    }
+
+    .header_logo {
+        margin-left: 2em;
+    }
+
+
+    .header_nav {
+        display: block;
+        background-color: var(--cor-clara);
+    }
+
+
+    .header_nav ul {
+        margin-right: 2em;
+        font-size: .9em;
+        color: #BFBAB8;
+    }
+
+
+    .header_nav li {
+        display: inline-block;
+    }
+
+
+    .header_nav a {
+        color: var(--cor-menu);
+        border-radius: 5px;
+    }
+
+
+    .header_nav a:hover {
+        background-color: color-mix(in srgb, var(--cor-site), #ffffff 80%);
+    }
+}
+
+.trailer {
+    background-color: var(--cor-clara);
+    padding-bottom: 1.5em;
+    padding-top: 1em;
+    padding-left: 1em;
+    padding-right: 1em;
+    line-height: 1.5em;
+}
+
+
+.trailer div {
+    text-align: center;
+    margin: auto;
+    width: 80%;
+}
+
+
+.trailer_title {
+    margin-top: 0;
+    padding-top: .5em;
+    color: var(--cor-site);
+}
+
+
+.trailer h1 {
+    font-size: 4em;
+    margin-bottom: 1em;
+    font-family: 'Parisienne', cursive;
+}
+
+
+.trailer_paragrafo {
+    font-size: 1.1em;
+}
+
+
+.trailer_botao {
+    display: inline-block;
+    margin-top: 1em;
+    padding: 1em 2em;
+    background-color: var(--cor-site);
+    border-radius: 8px;
+    text-decoration: none;
+    color: #ffffff;
+    text-transform: uppercase;
+}
+
+
+.trailer_botao:hover {
+    background-color: color-mix(in srgb, var(--cor-site), #ffffff 20%);
+}
+
+.trailer_video {
+    display: none;
+}
+
+p {
+    text-align: justify;
+}
+
+@media screen and (min-width: 48em) {
+
+    /*768px maior que*/
+    .trailer_botao {
+        display: none;
+    }
+
+    .trailer {
+        background-image: url(imagens/fundo_trailer.png);
+        background-size: cover;
+        background-position: center top;
+        background-repeat: no-repeat;
+        background-color: initial;
+    }
+
+    .trailer_video {
+        display: block;
+    }
+
+    .trailer_video .tamanho {
+        border-radius: .8em;
+        margin-bottom: 1em;
+    }
+
+    .trailer_paragrafo {
+        margin-bottom: 2em;
+    }
+}
+
+.trailer_botao_article {
+    display: inline-block;
+    margin-top: 1em;
+    padding: 1em 2em;
+    background-color: var(--cor-site);
+    border-radius: 8px;
+    text-decoration: none;
+    color: #ffffff;
+    text-transform: uppercase;
+}
+
+.trailer_botao_article:hover {
+    background-color: color-mix(in srgb, var(--cor-site), #ffffff 20%);
+}
+
+.main_content {
+    background-color: color-mix(in srgb, var(--cor-menu), #ffffff 60%);
+    text-align: center;
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+
+.main_content div {
+    margin: auto;
+    padding: 1em;
+    width: 80%;
+}
+
+
+.main_content_title {
+    color: var(--cor-site);
+    font-family: 'Parisienne', cursive;
+}
+
+
+.icon_img {
+    width: 5.6em;
+}
+
+article .icon_img:hover {
+    transform: scale(1.4);
+    transition: transform 0.5s ease-in-out;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+
+.col {
+    flex: 1 0 auto;
+    /*
+    flex-grow = 1
+    vai aumentar seu tamanho se houver espaÃ§o
+
+
+    flex-shrink = 0
+    nÃĢo quero que o elemento diminua
+
+
+    flex-basis = auto
+    vai depender do width do prÃģprio elemento
+    */
+    width: 100%;
+}
+
+
+.col-12 {
+    width: 100%;
+}
+
+@media screen and (min-width: 48em) {
+
+    /*768px maior que*/
+    .col-6 {
+        width: calc(50% - 2rem);
+    }
+}
+
+footer {
+    background-color: var(--cor-fundo);
+    color: #ffffff;
+    padding: .7em;
+    text-align: center;
+    font-style: italic;
+    font-size: .8em;
+}
