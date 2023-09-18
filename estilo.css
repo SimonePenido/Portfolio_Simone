@@ -14,7 +14,7 @@ html {
 #id {
     color: var(--cor-fonte);
     font-size: 3.4em;
-    font-family: 'Handjet', cursive;
+    font-family: sans-serif;
 }
 
 .maxWidth {
@@ -138,6 +138,98 @@ ul {
     background-color: initial;
 }
 
+.tamanho {
+    width: 20rem;
+}
+
+.container_img {
+    position: relative;
+    background-color: #535252;
+    width: 220px;
+    height: 220px;
+    padding: 24px;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 0 0 60px 5px rgba(0, 0, 0, 0.15);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    transition: width 0.4s, height 0.4s,
+    border-radius 0.4s;
+}
+
+.container_img:hover {
+    width: 340px;
+    height: 440px;
+    border-radius: 4px;
+}
+
+.img-container {
+    width: 170px;
+    height: 170px;
+    min-height: 170px;
+    border-radius: 50%;
+    overflow: hidden;
+    box-shadow: 0 0 40px 5px rgba(0, 0, 0, 0.2);
+}
+.img-container img {
+    width: 100%;
+    max-width: 100%;
+}
+.full-name {
+    font-size: 1.4em;
+    font-weight: bold;
+    letter-spacing: 1px;
+    margin-top: 40px;
+    margin-bottom: 16px;
+}
+
+.role,
+.description {
+    font-size: 1em;
+    letter-spacing: 0.5px;
+    line-height: 20px;
+    text-align: center;
+}
+.role {
+    text-transform: uppercase;
+    padding-bottom: 8px;
+    margin-bottom: 24px;
+    border-bottom: 2px solid #ffbe44;
+}
+.social-container {
+    position: absolute;
+    top: 40px;
+    left: -40px;
+    display: flex;
+    flex-direction: column;
+}
+.social-container button {
+    border: none;
+    outline: none;
+    color: #eee;
+    background: none;
+    width: 20px;
+    height: 40px;
+    font-size: 1.7em;
+    margin-bottom: 16px;
+    cursor: pointer;
+    transition: transform 0.4s;
+}
+.container_img:hover .social-container button {
+    transform: translateX(60px);
+    transition-delay: 0.3s;
+}
+.container_img:hover .social-container button:nth-child(2) {
+    transition-delay: 0.5s;
+}
+.container_img:hover .social-container button:nth-child(3) {
+    transition-delay: 0.7s;
+}
+
+
 .trailer {
     background-color: var(--cor-clara);
     padding-bottom: 1.5em;
@@ -165,7 +257,7 @@ ul {
 .trailer h1 {
     font-size: 4em;
     margin-bottom: 1em;
-    font-family: 'Parisienne', cursive;
+    font-family: sans-serif;
 }
 
 
@@ -259,7 +351,7 @@ p {
 
 .main_content_title {
     color: var(--cor-site);
-    font-family: 'Parisienne', cursive;
+    font-family: sans-serif;
 }
 
 
