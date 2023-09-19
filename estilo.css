@@ -138,16 +138,16 @@ ul {
     background-color: initial;
 }
 
-.tamanho {
+/*.tamanho {
     width: 20rem;
-}
+}*/
 
 .container_img {
     position: relative;
     background-color: #535252;
     width: 220px;
     height: 220px;
-    padding: 24px;
+    padding: 1rem;
     border-radius: 50%;
     cursor: pointer;
     box-shadow: 0 0 60px 5px rgba(0, 0, 0, 0.15);
@@ -156,8 +156,7 @@ ul {
     flex-direction: column;
     justify-content: start;
     align-items: center;
-    transition: width 0.4s, height 0.4s,
-    border-radius 0.4s;
+    transition: width 0.4s, height 0.4s, border-radius: 0.4s;
 }
 
 .container_img:hover {
@@ -172,7 +171,7 @@ ul {
     min-height: 170px;
     border-radius: 50%;
     overflow: hidden;
-    box-shadow: 0 0 40px 5px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0 40px 5px rgba(88, 1, 1, 0.3);
 }
 .img-container img {
     width: 100%;
@@ -182,8 +181,8 @@ ul {
     font-size: 1.4em;
     font-weight: bold;
     letter-spacing: 1px;
-    margin-top: 40px;
-    margin-bottom: 16px;
+    margin-top: .8rem;
+    margin-bottom: .6rem;
 }
 
 .role,
@@ -195,9 +194,9 @@ ul {
 }
 .role {
     text-transform: uppercase;
-    padding-bottom: 8px;
-    margin-bottom: 24px;
-    border-bottom: 2px solid #ffbe44;
+    padding-bottom: .8rem;
+    margin-bottom: 1.9rem;
+    border-bottom: 2px solid #590C21;
 }
 .social-container {
     position: absolute;
@@ -209,7 +208,7 @@ ul {
 .social-container button {
     border: none;
     outline: none;
-    color: #eee;
+    color: #590C21;
     background: none;
     width: 20px;
     height: 40px;
