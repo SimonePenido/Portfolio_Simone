@@ -666,31 +666,10 @@ article .icon_img:hover {
     }
 }
 
-footer {
-    background-color: var(--cor-fundo);
-    text-align: center;
-    color: #eee;
-    padding: 1em;
-}
-
-.logos_footer {
-    display: flex;
-    flex-direction: column;
-    gap: 1em;
-}
-
-.tamanho {
-    width: 2.5em;
-}
-
-.texto_footer {
-    font-size: .6rem;
-    text-transform: uppercase;
-    letter-spacing: 0.15em;
-    margin: 0;
-    padding-top: .8rem;
-    font-weight: 600;
-    text-align: center;
+.contact {
+    position: relative;
+    min-height: 100vh;
+    padding: ;
 }
 
 @media screen and (min-width: 48em) {
