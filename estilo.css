@@ -663,7 +663,7 @@ h2 {
     }
 
     .trailer_video .tamanho {
-        border-radius: .8em;
+        /*border-radius: .8em;*/
         margin-bottom: 1em;
     }
 
@@ -688,9 +688,12 @@ h2 {
 }
 
 .trailer_video iframe {
+    width: 631px; 
+    height: 393px;
     border: 0.3px solid var(--cor-fonte);
     box-shadow: 0 0 5px 3px #590C21;
 }
+
 
 .trailer_video .tamanho {
     border-radius: .8em;
@@ -770,7 +773,7 @@ footer {
 
 .texto_footer {
     font-size: 0.9rem;
-    padding: 1em;
+    padding: 0.5em;
     text-align: center;
     background-color: #000000;
 }
@@ -791,6 +794,7 @@ footer {
     color: #fff;
     font-size: 1.1em;
     font-weight: 300;
+    padding-top: 0.5em;
 }
 
 .container_footer {
@@ -799,7 +803,7 @@ footer {
     justify-content: center;
     align-items: center;
     gap: 10px;
-    margin-top: 30px;
+    margin-top: 20px;
 }
 
 .container_footer .contactInfo {
@@ -810,21 +814,21 @@ footer {
 
 .container_footer .contactInfo .box {
     position: relative;
-    padding: 20px 0;
+    padding: 10px 0;
     display: flex;
     cursor: pointer;
 }
 
-/*.container_footer .contactInfo .box .icon {
-    min-width: 60px;
+.container_footer .contactInfo .box .icon {
+    min-width: 45px;
     height: 60px;
     background: #fff;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 3em;
+    font-size: 2em;
     transition: 0.5s;
-}*/
+}
 
 .icon {
     color: var(--cor-fucsia);
@@ -839,8 +843,9 @@ footer {
 .container_footer .contactInfo .box .text {
     display: flex;
     flex-direction: column;
-    margin-left: 20px;
-    font-size: 1.1em;
+    margin-left: 30px;
+    padding: 1em;
+    font-size: 1rem;
     color: #fff;
     font-weight: 300;
 }
@@ -854,20 +859,20 @@ footer {
     color: var(--cor-fucsia);
 }
 
-.container_footer .contactInfo .txt {
+.container_footer .contactInfo .text {
     color: #fff;
-    margin-top: 50px;
+    margin-top: 5px;
     font-weight: 500;
-    padding-left: 10px;
-    border-left: 50px solid #e91e63;
-    line-height: 1em;
+    padding-left: 5px;
+    border-left: 3px solid #e91e63;
+    line-height: 0.7em;
 }
 
 .sci {
     position: relative;
     display: flex;
     gap: 30px;
-    margin: 20px 0;
+    margin: 10px 0;
 }
 
 .sci li {
@@ -876,7 +881,7 @@ footer {
 
 .sci li a {
     color: #fff;
-    font-size: 2em;
+    font-size: 2rem;
     transition: 0.5s;
 }
 
@@ -923,8 +928,8 @@ footer {
     position: absolute;
     left: 0;
     pointer-events: none;
-    padding: 5px 0;
-    margin: 10px 0;
+    padding: 5px 2px;
+    margin: 10px 1px;
     font-size: 1.1em;
     color: #696262;
     transition: 0.5s;
@@ -935,8 +940,8 @@ footer {
 .container_footer .contactForm .inputBox input:valid~span,
 .container_footer .contactForm .inputBox textarea:valid~span {
     color: #e91e63;
-    font-size: 0.9em;
-    transform: translateY(-20px);
+    font-size: 1rem;
+    transform: translateY(-25px);
 }
 
 .container_footer .contactForm .inputBox input[type="submit"] {
@@ -945,8 +950,9 @@ footer {
     color: #fff;
     border: none;
     cursor: pointer;
-    padding: 20px;
-    font-size: 1.1em;
+    padding: 15px;
+    border-radius: 10px;
+    font-size: 1.3rem;
     font-weight: 500;
 }
 
@@ -970,7 +976,7 @@ footer {
     align-items: center;
     white-space: nowrap;
     overflow: hidden;
-    box-shadow: 5px 5px 8px rgba(156, 66, 66, 0.9);
+    box-shadow: 2px 2px 4px rgba(255, 255, 255, 0.842);
     transition: width 300ms ease-in-out 0s, background-color 300ms linear 200ms;
 }
 
@@ -979,10 +985,10 @@ footer {
     justify-content: center;
     align-items: center;
     height: 50px;
-    aspect-ratio: 1 / 1;
+    aspect-ratio: 1 / 1.25;
 }
 
-a{
+.social {
     text-decoration: none;
 }
 
@@ -993,7 +999,7 @@ a{
 
 .section_icons::after{
     content: attr(tooltip);
-    margin-left: 10px;
+    margin-left: 5px;
 }
 
 .facebook:hover{
@@ -1001,15 +1007,15 @@ a{
 }
 
 .instagram:hover{
-    background: #9b3f44;
+    background: #c00a0a;
 }
 
 .linkedin:hover{
-    background: #1f56cd;
+    background: #0d1a3a;
 }
 
 .github:hover{
-    background: #3a0428;
+    background: #333;
 }
 
 
