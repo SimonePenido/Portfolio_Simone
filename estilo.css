@@ -105,6 +105,59 @@ ul {
         0 0px 80px #812136;
 }
 
+/*body {
+  background: white url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/86637/sky.jpeg) no-repeat center 0%/cover;
+  transition: background-position 0.3s ease-in-out;
+}
+body.fp-viewing-0 {
+  background-position: center 0%;
+}
+body.fp-viewing-1 {
+  background-position: center 50%;
+}
+body.fp-viewing-2 {
+  background-position: center 100%;
+}
+
+.one,
+.three {
+  background: linear-gradient(-45deg, transparent 25%, white 25%, white 75%, transparent 75%, transparent 100%);
+}
+
+.two {
+  background: linear-gradient(45deg, transparent 25%, white 25%, white 75%, transparent 75%, transparent 100%);
+  text-align: right;
+}
+
+h1,
+h2 {
+  font-family: "Roboto", sans-serif;
+  font-size: 58px;
+  max-width: 830px;
+  padding: 0 15px;
+  margin: 0 auto;
+  height: 64px;
+  overflow: hidden;
+  line-height: 3.5;
+  transition: line-height 0.85s cubic-bezier(0.77, 0, 0.175, 1);
+}
+
+h1 {
+  font-weight: 100;
+  transition-delay: 0.3s;
+}
+
+h2 {
+  margin-top: -6px;
+  font-weight: 300;
+  transition-delay: 0.8s;
+}
+
+.section.active h1,
+.section.active h2 {
+  line-height: 1;
+}*/
+
 section {
     margin: 2em 3em 1em 3em;
     ;
@@ -690,7 +743,7 @@ h2 {
 }
 
 .trailer_video iframe {
-    width: 631px; 
+    width: 631px;
     height: 393px;
     border: 0.3px solid var(--cor-fonte);
     box-shadow: 0 0 5px 3px #590C21;
@@ -706,7 +759,7 @@ h2 {
     margin-bottom: 2em;
 }
 
-.iframe h1{
+.iframe h1 {
     background-color: #00000000;
 }
 
@@ -965,7 +1018,7 @@ footer {
     inset: 0;
 }
 
-.txt{
+.txt {
     color: #fff;
     font-size: 1.2rem;
     font-weight: 300;
@@ -1004,29 +1057,29 @@ footer {
     text-decoration: none;
 }
 
-.section_icons:hover{
+.section_icons:hover {
     width: 140px;
     transition: width 300ms ease-in-out 0s, background-color 100ms linear 0s;
 }
 
-.section_icons::after{
+.section_icons::after {
     content: attr(tooltip);
     margin-left: 5px;
 }
 
-.facebook:hover{
+.facebook:hover {
     background: #3b5998;
 }
 
-.instagram:hover{
+.instagram:hover {
     background: #c00a0a;
 }
 
-.linkedin:hover{
+.linkedin:hover {
     background: #0d1a3a;
 }
 
-.github:hover{
+.github:hover {
     background: #333;
 }
 
@@ -1055,7 +1108,7 @@ footer {
     /*768px maior que */
 
     .logos_footer {
-        flex-direction:column;
+        flex-direction: column;
         justify-content: center;
         gap: 1.5em;
         padding: 3em;
