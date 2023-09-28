@@ -105,63 +105,61 @@ ul {
         0 0px 80px #812136;
 }
 
-/*body {
-  background: white url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/86637/sky.jpeg) no-repeat center 0%/cover;
-  transition: background-position 0.3s ease-in-out;
-}
-body.fp-viewing-0 {
-  background-position: center 0%;
-}
-body.fp-viewing-1 {
-  background-position: center 50%;
-}
-body.fp-viewing-2 {
-  background-position: center 100%;
-}
-
-.one,
-.three {
-  background: linear-gradient(-45deg, transparent 25%, white 25%, white 75%, transparent 75%, transparent 100%);
-}
-
-.two {
-  background: linear-gradient(45deg, transparent 25%, white 25%, white 75%, transparent 75%, transparent 100%);
-  text-align: right;
-}
-
-h1,
-h2 {
-  font-family: "Roboto", sans-serif;
-  font-size: 58px;
-  max-width: 830px;
-  padding: 0 15px;
-  margin: 0 auto;
-  height: 64px;
-  overflow: hidden;
-  line-height: 3.5;
-  transition: line-height 0.85s cubic-bezier(0.77, 0, 0.175, 1);
-}
-
-h1 {
-  font-weight: 100;
-  transition-delay: 0.3s;
-}
-
-h2 {
-  margin-top: -6px;
-  font-weight: 300;
-  transition-delay: 0.8s;
-}
-
-.section.active h1,
-.section.active h2 {
-  line-height: 1;
-}*/
-
 section {
     margin: 2em 3em 1em 3em;
     ;
 }
+
+
+
+
+.body_slider {
+    display: flex;
+    flex-direction: center;
+    justify-content: center;
+    align-items: center;
+}
+
+#slider {
+    width: 100%;
+    max-width: 900px;
+    height: 80vw;
+    max-height: 500px;
+
+    position: relative;
+}
+
+#slider img{
+    opacity: 0;
+
+    position: absolute;
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    transition: opacity 800ms;
+}
+
+#slider img.selected { 
+    opacity: 1;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 section h1 {
     font-size: 1.9em;
@@ -1041,7 +1039,7 @@ footer {
     align-items: center;
     white-space: nowrap;
     overflow: hidden;
-    box-shadow: 2px 2px 4px rgba(255, 255, 255, 0.842);
+    box-shadow: 1px 1px 2px rgba(255, 255, 255, 0.842);
     transition: width 300ms ease-in-out 0s, background-color 300ms linear 200ms;
 }
 
