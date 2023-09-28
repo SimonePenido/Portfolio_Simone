@@ -122,14 +122,14 @@ section {
 
 #slider {
     width: 100%;
-    max-width: 900px;
-    height: 80vw;
-    max-height: 500px;
+    /*max-width: 900px;*/
+    height: 30vw;
+    /*max-height: 500px;*/
 
     position: relative;
 }
 
-#slider img{
+#slider img {
     opacity: 0;
 
     position: absolute;
@@ -142,33 +142,44 @@ section {
     transition: opacity 800ms;
 }
 
-#slider img.selected { 
+#slider img.selected {
     opacity: 1;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 section h1 {
     font-size: 1.9em;
     text-transform: uppercase;
 }
 
-#aprendizado ul {
-    list-style-type: none;
+#sobre_mim {
+    background-image: url(imagens/sobremim.png);
+    background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat;
+    width: auto;
+    height: 100%;
+    display: flex;
+    align-items: center top;
+    justify-content: center top;
+
+
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-color: initial;
 }
+
+#inicio {
+    background-image: url(imagens/fundo7.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: auto;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 
 #inicio span {
     color: #b9828e;
@@ -180,6 +191,45 @@ section h1 {
         0 0px 80px #812136;
 }
 
+#desafios {
+    background-image: url(imagens/fundo3.png);
+    background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat;
+    width: auto;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#conquistas {
+    background-image: url(imagens/fundo5.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: auto;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#aprendizagem {
+    background-image: url(imagens/fundo2.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: auto;
+    height: 100%;
+    display: flex;
+    align-items: center top;
+    justify-content: center;
+}
+
+#aprendizagem ul {
+    list-style-type: none;
+}
 
 .body {
     min-height: 19vh;
@@ -339,13 +389,6 @@ h2 {
     text-align: center;
 }
 
-#projetos {
-    background-image: url(imagens/fundo1.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-}
-
 @media screen and (min-width: 48em) {
 
     /*768px maior que*/
@@ -393,20 +436,11 @@ h2 {
     }
 }
 
-.sobre_mim {
-    /*background-image: url(imagens/);*/
-    background-size: cover;
-    background-position: center top;
-    background-repeat: no-repeat;
-    background-color: initial;
-}
-
 .fundo_article {
-    background-image: url(imagens/sobre.png);
+    background-image: url(imagens/fundo9.png);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -677,9 +711,11 @@ h2 {
 }
 
 .trailer_botao {
-    display: inline-block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin-top: 1em;
-    padding: 1em 2em;
+    padding: 0.7em 1em;
     background-color: var(--cor-fonte);
     border-radius: 8px;
     text-decoration: none;
@@ -937,6 +973,7 @@ footer {
 }
 
 .maps {
+
     position: relative;
     width: 100%;
     margin-top: 36px;
@@ -945,7 +982,7 @@ footer {
 .container_footer .contactForm {
     position: relative;
     width: 50%;
-    background: var(--cor-menu);
+    background: #0000008a;
     min-height: 100px;
     padding: 60px;
     border-radius: 10px;
@@ -1028,15 +1065,16 @@ footer {
 }
 
 .section_icons {
-    background-color: #000;
+    background-color: #000000c2;
     color: #fff;
-    height: 50px;
-    width: 50px;
+    height: 80%;
+    width: 2.8em;
     margin: 0px 7px 0px;
-    padding: 5px;
+    padding: 2px;
     border-radius: 8px;
     display: inline-flex;
     align-items: center;
+    justify-content: left;
     white-space: nowrap;
     overflow: hidden;
     box-shadow: 1px 1px 2px rgba(255, 255, 255, 0.842);
@@ -1098,7 +1136,14 @@ footer {
     }
 
     .container_footer .contactForm {
-        padding: 50px 30px;
+        padding: 30px 10px;
+    }
+
+    .maps {
+        display: flex;
+        flex-direction: center;
+        justify-content: center;
+        align-items: center;
     }
 }
 
