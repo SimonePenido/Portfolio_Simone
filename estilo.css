@@ -694,6 +694,18 @@ section h1 {
         background-image: url(imagens/missDarkClothes.png);
     }
 
+    .card:nth-child(13):before {
+        background-image: url(imagens/CartaoNubank.png);
+    }
+
+    .card:nth-child(14):before {
+        background-image: url(imagens/login-escuro.png);
+    }
+
+    .card:nth-child(15):before {
+        background-image: url(imagens/missDarkClothes.png);
+    }
+
     .content {
         position: relative;
         display: flex;
