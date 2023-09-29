@@ -251,6 +251,8 @@ section h1 {
         grid-template-areas: "offer-1-img offer-desc-1";
     }
 
+
+
     .offer-1 img {
         background-color: var(--cor-site);
         padding: 2rem 0;
@@ -258,6 +260,10 @@ section h1 {
 
     .offer-2 {
         grid-template-areas: "offer-desc-2 offer-2-img";
+    }
+
+    .offer-3 {
+        grid-template-areas: "offer-3-img offer-desc-3";
     }
 
     .offer-1-img {
@@ -274,6 +280,10 @@ section h1 {
 
     .offer-desc-2 {
         grid-area: offer-desc-2;
+    }
+
+    .offer-desc-3 {
+        grid-area: offer-desc-3;
     }
 
     .offer-description .offer-title {
@@ -294,9 +304,6 @@ section h1 {
         padding: 0.5rem 0 1rem 0;
     }
 
-    .offer-description .cart-btn {
-        margin: 2rem 0 0.5rem 0;
-    }
 }
     /*---------------------Inicio da jornada--------------------*/
 
