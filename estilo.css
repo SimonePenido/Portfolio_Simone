@@ -85,12 +85,13 @@ ul {
 
 .sobre_mim_titulo {
     color: #812136;
-    font-size: 40px;
     text-transform: none;
+    font-size: 2rem;
 }
 
 .sobre_mim_titulo span {
     text-transform: uppercase;
+    font-size: 2rem;
     color: #b9828e;
     text-shadow:
         0 0px 10px #84122A,
@@ -133,6 +134,22 @@ section {
 section h1 {
     font-size: 1.5em;
     text-transform: uppercase;
+}
+
+.article {
+    background-color: rgba(3, 3, 3, 0.541);
+    padding: 16px;
+    margin-bottom: 32px;
+    margin-top: 32px;
+}
+
+.section_title {
+    border-bottom: 2px solid #050506;
+    background-color: rgba(54, 54, 54, 0.795);
+    padding: 10px;
+    margin-top: 0;
+    letter-spacing: .09em;
+    font-size: 1.6rem;
 }
 
 #sobre_mim {
@@ -398,7 +415,16 @@ section h1 {
     padding-bottom: 0.3em;
 }
 
-p,
+.p_section {
+    color: var(--cor-clara);
+    line-height: 1.5em;
+    text-align: justify;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    margin-left: 1em;
+    margin-right: 1em;
+}
+
 ul,
 li {
     color: var(--cor-clara);
@@ -410,7 +436,14 @@ li {
     margin-right: 1em;
 }
 
-h1,
+.section_title {
+    color: var(--cor-fonte);
+    margin-top: 1em;
+    margin-bottom: 1em;
+    text-align: center;
+}
+
+
 h2 {
     color: var(--cor-fonte);
     margin-top: 1em;
