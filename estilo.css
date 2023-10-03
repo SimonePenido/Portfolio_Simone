@@ -83,24 +83,6 @@ ul {
     background-color: color-mix(in srgb, var(--cor-menu), #fff 5%);
 }
 
-.sobre_mim_titulo {
-    color: #812136;
-    text-transform: none;
-    font-size: 2rem;
-}
-
-.sobre_mim_titulo span {
-    text-transform: uppercase;
-    font-size: 2rem;
-    color: #b9828e;
-    text-shadow:
-        0 0px 10px #84122A,
-        0 0px 20px #84122A,
-        0 0px 40px #812136,
-        0 0px 60px #812136,
-        0 0px 80px #812136;
-}
-
 section {
     margin: 1em;
 }
@@ -131,25 +113,17 @@ section {
     opacity: 1;
 }
 
-section h1 {
-    font-size: 1.5em;
-    text-transform: uppercase;
-}
-
 .article {
-    background-color: rgba(3, 3, 3, 0.541);
-    padding: 16px;
-    margin-bottom: 32px;
-    margin-top: 32px;
+    border: 1px solid #84122be3;
 }
 
 .section_title {
-    border-bottom: 2px solid #050506;
-    background-color: rgba(54, 54, 54, 0.795);
+    background-color: #84122be3;
     padding: 10px;
     margin-top: 0;
     letter-spacing: .09em;
     font-size: 1.6rem;
+    color: #fff;
 }
 
 #sobre_mim {
@@ -162,10 +136,6 @@ section h1 {
     display: flex;
     align-items: center top;
     justify-content: center top;
-
-
-    background-position: center top;
-    background-repeat: no-repeat;
     background-color: initial;
 }
 
@@ -223,14 +193,14 @@ section h1 {
     justify-content: center;
 }
 
-#inicio span {
-    color: #b9828e;
+span {
+    color: #f8f2f4;
     text-shadow:
-        0 0px 10px #84122A,
-        0 0px 20px #84122A,
-        0 0px 40px #812136,
-        0 0px 60px #812136,
-        0 0px 80px #812136;
+        0 0px 10px #f7dce2,
+        0 0px 20px #d6afb7,
+        0 0px 40px #ca8795,
+        0 0px 60px #ca8795,
+        0 0px 80px #9b5c6a;
 }
 
 #desafios {
@@ -437,10 +407,9 @@ li {
 }
 
 .section_title {
-    color: var(--cor-fonte);
-    margin-top: 1em;
-    margin-bottom: 1em;
+    color: #fff;
     text-align: center;
+    text-transform: uppercase;
 }
 
 
@@ -449,6 +418,76 @@ h2 {
     margin-top: 1em;
     margin-bottom: 1em;
     text-align: center;
+    text-transform: uppercase;
+}
+
+.container_cursos {
+    position: relative;
+    width: 1100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 30px 20px 10px;
+}
+
+.container_cursos .card_cursos {
+    max-width: 300px;
+    height: 420px;
+    background: #590C21;
+    margin: 30px 10px;
+    padding: 20px 15px;
+    display: flex;
+    border-radius: 4px;
+    flex-direction: column;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
+    transition: 0.3 s ease-in-out;
+}
+
+.container_cursos .card_cursos:hover {
+    height: 420px;
+}
+
+.container_cursos .card_cursos .imgBx {
+    position: relative;
+    background: #590C21;
+    top: -60px;
+    left: 20px;
+    min-width: initial;
+    width: 250px;
+    height: 260px;
+    border-radius: 4px;
+    z-index: 1;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.02);
+}
+
+.container_cursos .card_cursos .imgBx img {
+    max-width: 100%;
+    border-radius: 4px;
+}
+
+.container_cursos .card_cursos .content_cursos {
+    position: relative;
+    margin-top: -140px;
+    padding: 10px 15px;
+    text-align: center;
+    color: #fff;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.3s ease-in-out;
+    transition-delay: 0s;
+}
+
+.container_cursos .card_cursos:hover .content_cursos {
+    visibility: visible;
+    opacity: 1;
+    margin-top: -40px;
+    transition-delay: 0.3s;
+}
+
+.h_cursos .p_cursos {
+    font-size: 16px;
+    color: #fff;
 }
 
 @media screen and (min-width: 48em) {
@@ -479,11 +518,11 @@ h2 {
         font-size: .8em;
         margin-bottom: 1em;
         padding: 1em;
-    }
+        }
 
     .header_nav li {
         display: inline-block;
-    }
+        }
 
     .header_nav a {
         border-radius: 5px;
@@ -539,6 +578,8 @@ h2 {
     border-radius: 5px;
     text-align: center;
     color: #fff;
+    font-weight: 500;
+    text-shadow: #000000;
     background-color: #000000;
     border: 0.3px solid var(--cor-fonte);
     box-shadow: 0 0 5px 3px #590C21;
@@ -776,10 +817,6 @@ h2 {
     background-color: initial;
 }
 
-.depoimento {
-    padding: 1em;
-}
-
 .trailer {
     background-color: var(--cor-menu);
     padding-bottom: 1.5em;
@@ -907,37 +944,6 @@ article .icon_img:hover {
     transition: transform 0.5s ease-in-out;
 }
 */
-
-.row {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 2rem;
-}
-
-.col {
-    flex: 1 0 auto;
-    /*
-    flex-grow = 1
-    vai aumentar seu tamanho se houver espaÃ§o
-    flex-shrink = 0
-    nÃĢo quero que o elemento diminua
-    flex-basis = auto
-    vai depender do width do prÃģprio elemento
-    */
-    width: 100%;
-}
-
-.col-12 {
-    width: 100%;
-}
-
-@media screen and (min-width: 48em) {
-
-    /*768px maior que*/
-    .col-6 {
-        width: calc(50% - 2rem);
-    }
-}
 
 .tamanho {
     width: 2em;
@@ -1210,7 +1216,7 @@ footer {
 }
 
 .instagram:hover {
-    background: #c00a0a;
+    background: #c00a83;
 }
 
 .linkedin:hover {
