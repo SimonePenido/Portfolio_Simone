@@ -39,7 +39,7 @@ html {
     border-radius: 100px;
 }
 
-.ul_header li{
+.ul_header li {
     margin: 0.6em;
 }
 
@@ -75,7 +75,7 @@ ul {
     font-size: .8em;
     font-weight: 600;
     margin: 0.6em;
-    }
+}
 
 .header_nav a {
     color: var(--cor-menu);
@@ -95,7 +95,7 @@ section {
     margin-bottom: 0.5em;
 }
 
-.config-img{
+.config-img {
     height: 3.12em;
     float: left;
     padding-right: 0.3125em;
@@ -103,7 +103,7 @@ section {
     transition: transform 0.5s ease-in-out;
 }
 
-.config-img:hover{
+.config-img:hover {
     transform: scale(1.2);
 }
 
@@ -214,22 +214,25 @@ section {
     justify-content: center;
 }
 
-#inicio ul,li{
+#inicio ul,
+li {
     text-decoration: none;
-    list-style-type:square;
+    list-style-type: square;
     margin: 1em 2em;
 }
 
 .article span {
     font-size: 2.2rem;
-    color: #f0115b;
+    color: #ec467e;
+    -webkit-text-stroke: 0.03125em #FFF;
+    text-stroke: 0.03125em #FFF;
     text-shadow:
-        0 0px 10px #490211,
-        0 0px 20px #bd062b,
-        0 0px 40px #803747,
-        0 0px 60px #c77a8a,
-        0 0px 80px #c4405d;
-        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        0 0px 10px #e992a5,
+        0 0px 20px #eeaab7,
+        0 0px 40px #d6a0ac,
+        0 0px 60px #c77a89ad,
+        0 0px 80px #faeff15b;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 #desafios {
@@ -269,7 +272,7 @@ section {
 }
 
 #aprendizagem ul {
-    list-style-type: none;
+    list-style-type:square;
     margin: 1em;
 }
 
@@ -480,11 +483,11 @@ h2 {
         font-size: .8em;
         margin-bottom: 1em;
         padding: 1em;
-        }
+    }
 
     .header_nav li {
         display: inline-block;
-        }
+    }
 
     .header_nav a {
         border-radius: 5px;
@@ -497,6 +500,7 @@ h2 {
         color: var(--cor-menu);
         border: 0.5px solid #812136;
     }
+
 }
 
 .fundo_article {
@@ -1008,6 +1012,7 @@ footer {
     color: #fff;
     margin-top: 0.7em;
 }
+
 .container_footer .contactInfo .text {
     color: #fff;
     margin-top: 7px;
