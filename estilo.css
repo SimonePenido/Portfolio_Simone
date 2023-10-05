@@ -75,7 +75,7 @@ ul {
     font-size: .8em;
     font-weight: 600;
     margin: 0.6em;
-}
+    }
 
 .header_nav a {
     color: var(--cor-menu);
@@ -84,6 +84,7 @@ ul {
     padding: 0.5em;
     color: #eee;
     text-align: center;
+    list-style-type: none;
 }
 
 .header_nav a:hover {
@@ -95,9 +96,9 @@ section {
 }
 
 .config-img{
-    height: 50px;
+    height: 3.12em;
     float: left;
-    padding-right: 5px;
+    padding-right: 0.3125em;
     color: #fff;
     transition: transform 0.5s ease-in-out;
 }
@@ -139,7 +140,7 @@ section {
 
 .section_title {
     background-color: #84122be3;
-    padding: 10px;
+    padding: 0.6250em;
     margin-top: 0;
     letter-spacing: .09em;
     font-size: 1.6rem;
@@ -163,24 +164,24 @@ section {
     display: grid;
     grid-gap: 1rem;
     padding: .9rem;
-    max-width: 1024px;
+    max-width: 64em;
     margin: 0 auto;
     font-family: var(--font-sans);
 }
 
-@media (min-width: 600px) {
+@media (min-width: 37.5em) {
     .card_spotify {
         grid-template-columns: repeat(1, 1fr);
     }
 }
 
-@media (min-width: 800px) {
+@media (min-width: 50em) {
     .card_spotify {
         grid-template-columns: repeat(2, 1fr);
     }
 
     .spot {
-        height: 360px;
+        height: 22.5em;
     }
 }
 
@@ -275,7 +276,7 @@ section {
 .body {
     min-height: 19vh;
     width: 100%;
-    font-size: 14px;
+    font-size: 0.9rem;
     background: var(--cor-fundo);
     color: #fff;
     display: flex;
@@ -285,9 +286,9 @@ section {
 
 .container_img {
     position: relative;
-    width: 240px;
-    height: 240px;
-    padding: 20px;
+    width: 15.6em;
+    height: 15em;
+    padding: 1.25em;
     border-radius: 100%;
     cursor: pointer;
     box-shadow: 0 0 60px 5px rgba(0, 0, 0, 0.5);
@@ -297,26 +298,26 @@ section {
     justify-content: start;
     align-items: center;
     transition: width 0.4s, height 0.4s, border-radius 0.4s;
-    margin-bottom: 20px;
-    padding-bottom: 10px;
+    margin-bottom: 1.28em;
+    padding-bottom: 1.2em;
 }
 
 .container_img.body {
     box-shadow: 0 0 10px 1px var(--cor-fucsia);
-    padding-bottom: 16px;
+    padding-bottom: 1em;
     margin-top: 2.5em;
 }
 
 .container_img:hover {
-    width: 340px;
-    height: 460px;
+    width: 22.25em;
+    height: 30em;
     border-radius: 6px;
 }
 
 .img-container {
-    width: 200px;
-    height: 200px;
-    min-height: 200px;
+    width: 12.5em;
+    height: 12.5em;
+    min-height: 12.5em;
     border-radius: 100%;
     overflow: hidden;
     box-shadow: 0 0 20px 5px var(--cor-fucsia);
@@ -330,8 +331,8 @@ section {
 .full-name {
     font-size: 1.3em;
     font-weight: bold;
-    letter-spacing: 1px;
-    margin-top: 25px;
+    letter-spacing: 0.0625em;
+    margin-top: 1.5625em;
     margin-bottom: 10px;
     color: #fff;
 }
@@ -339,8 +340,8 @@ section {
 .description ul {
     font-size: 1.3em;
     letter-spacing: 0.8px;
-    line-height: 10px;
-    padding-bottom: 8px;
+    line-height: 0.625em;
+    padding-bottom: 0.5em;
     padding-top: 0;
 }
 
@@ -356,7 +357,7 @@ section {
     margin-top: 0.3px;
     border-bottom: 2px solid #590c2196;
     color: #8C1434;
-    font-size: 1.4em;
+    font-size: 1.2em;
     letter-spacing: 0.8px;
     line-height: 10px;
 }
@@ -365,13 +366,13 @@ section {
     padding-top: 5px;
     margin-top: 1px;
     margin-bottom: 10px;
-    text-align: justify;
+    text-align: center;
 }
 
 .social-container {
     position: absolute;
-    top: 40px;
-    left: -40px;
+    top: 2.5em;
+    left: -2.5em;
     display: flex;
     flex-direction: column;
 }
@@ -433,6 +434,7 @@ li {
     margin-top: 1em;
     margin-bottom: 1em;
     text-decoration: none;
+    list-style-type: none;
 }
 
 .section_title {
@@ -1055,8 +1057,8 @@ footer {
     position: relative;
     width: 50%;
     background: #0000008a;
-    min-height: 100px;
-    padding: 60px;
+    min-height: 6.25em;
+    padding: 3.75em;
     border-radius: 10px;
 }
 
@@ -1070,12 +1072,12 @@ footer {
 .container_footer .contactForm .inputBox {
     position: relative;
     width: 100%;
-    margin-top: 20px;
+    margin-top: 1.25em;
 }
 
 .content_footer h1 {
     background-color: #e91e62b7;
-    padding: 10px;
+    padding: 0.625em;
     margin-top: 0;
     border-radius: 10px;
     letter-spacing: .09em;
@@ -1089,7 +1091,7 @@ footer {
     width: 100%;
     padding: 5px 0;
     font-size: 1.1em;
-    margin: 10px 0;
+    margin: 0.625em 0;
     border: none;
     border-bottom: 2px solid #333;
     outline: none;
@@ -1101,7 +1103,7 @@ footer {
     left: 0;
     pointer-events: none;
     padding: 5px 2px;
-    margin: 10px 1px;
+    margin: 0.625em 1px;
     font-size: 1.1em;
     color: #696262;
     transition: 0.5s;
@@ -1122,7 +1124,7 @@ footer {
     color: #fff;
     border: none;
     cursor: pointer;
-    padding: 15px;
+    padding: 0.9em;
     border-radius: 10px;
     font-size: 1.3rem;
     font-weight: 500;
@@ -1153,8 +1155,8 @@ footer {
     height: 80%;
     width: 2.8em;
     margin: 0px 7px 0px;
-    padding: 2px;
-    border-radius: 8px;
+    padding: 0.125em;
+    border-radius: 0.5em;
     display: inline-flex;
     align-items: center;
     justify-content: left;
@@ -1168,7 +1170,7 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 50px;
+    height: 3.125em;
     aspect-ratio: 1 / 1.25;
 }
 
@@ -1177,13 +1179,13 @@ footer {
 }
 
 .section_icons:hover {
-    width: 140px;
+    width: 8.75em;
     transition: width 300ms ease-in-out 0s, background-color 100ms linear 0s;
 }
 
 .section_icons::after {
     content: attr(tooltip);
-    margin-left: 5px;
+    margin-left: 0.3125em;
 }
 
 .facebook:hover {
@@ -1203,10 +1205,9 @@ footer {
 }
 
 
-/* lets make it responsive */
 @media (max-width: 991px) {
     .contact {
-        padding: 50px;
+        padding: 3.125em;
     }
 
     .container_footer {
@@ -1219,7 +1220,7 @@ footer {
     }
 
     .container_footer .contactForm {
-        padding: 30px 10px;
+        padding: 1.875em 0.625em;
     }
 
     .maps {
