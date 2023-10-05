@@ -6,7 +6,7 @@
     --cor-menu: #000000;
     --cor-fundo: #070000d7;
     --cor-clara: #f5f5f5;
-    --cor-fucsia: #63484e;
+    --cor-fucsia: #8C1434;
     --d: 700ms;
     --e: cubic-bezier(0.34, 1, 0.22, 1);
     --font-sans: "Rubik", sans-serif;
@@ -37,6 +37,10 @@ html {
     height: 100%;
     margin: 1.2em;
     border-radius: 100px;
+}
+
+.ul_header li{
+    margin: 0.6em;
 }
 
 #hamburguer {
@@ -70,7 +74,7 @@ ul {
     letter-spacing: .2em;
     font-size: .8em;
     font-weight: 600;
-    margin-bottom: 0.6em;
+    margin: 0.6em;
 }
 
 .header_nav a {
@@ -79,6 +83,7 @@ ul {
     display: block;
     padding: 0.5em;
     color: #eee;
+    text-align: center;
 }
 
 .header_nav a:hover {
@@ -86,7 +91,7 @@ ul {
 }
 
 section {
-    margin: 1em;
+    margin-bottom: 0.5em;
 }
 
 .config-img{
@@ -94,6 +99,7 @@ section {
     float: left;
     padding-right: 5px;
     color: #fff;
+    transition: transform 0.5s ease-in-out;
 }
 
 .config-img:hover{
@@ -188,7 +194,7 @@ section {
     border-radius: 5px;
     text-align: center;
     color: #fff;
-    background-color: #000000;
+    background-color: #333;
     border: 0.3px solid var(--cor-fonte);
     box-shadow: 0 0 5px 3px #590C21;
     border-radius: 10px;
@@ -198,7 +204,7 @@ section {
 #inicio {
     background-image: url(imagens/fundo7.png);
     background-size: cover;
-    background-position: center;
+    background-position: center top;
     background-repeat: no-repeat;
     width: auto;
     height: 100%;
@@ -207,14 +213,21 @@ section {
     justify-content: center;
 }
 
-span {
-    color: #f8f2f4;
+#inicio ul,li{
+    text-decoration: none;
+    list-style-type:square;
+    margin: 1em 2em;
+}
+
+.article span {
+    font-size: 2.2rem;
+    color: #f0115b;
     text-shadow:
-        0 0px 10px #f7dce2,
-        0 0px 20px #d6afb7,
-        0 0px 40px #ca8795,
-        0 0px 60px #ca8795,
-        0 0px 80px #9b5c6a;
+        0 0px 10px #490211,
+        0 0px 20px #bd062b,
+        0 0px 40px #803747,
+        0 0px 60px #c77a8a,
+        0 0px 80px #c4405d;
         font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
@@ -233,7 +246,7 @@ span {
 #conquistas {
     background-image: url(imagens/fundo5.png);
     background-size: cover;
-    background-position: center;
+    background-position: center top;
     background-repeat: no-repeat;
     width: auto;
     height: 100%;
@@ -408,8 +421,8 @@ span {
     text-align: justify;
     margin-top: 1em;
     margin-bottom: 1em;
-    margin-left: 1em;
-    margin-right: 1em;
+    margin-left: 2em;
+    margin-right: 2em;
 }
 
 ul,
@@ -419,6 +432,7 @@ li {
     text-align: justify;
     margin-top: 1em;
     margin-bottom: 1em;
+    text-decoration: none;
 }
 
 .section_title {
@@ -885,15 +899,6 @@ h2 {
     background-color: #00000000;
 }
 
-/*.icon_img {
-    width: 5.6em;
-}
-article .icon_img:hover {
-    transform: scale(1.4);
-    transition: transform 0.5s ease-in-out;
-}
-*/
-
 .tamanho {
     width: 2em;
 }
@@ -985,7 +990,7 @@ footer {
     flex-direction: column;
     margin-left: 30px;
     padding: 1em;
-    font-size: 1rem;
+    font-size: 0.8rem;
     color: #fff;
     font-weight: 300;
 }
@@ -1015,6 +1020,10 @@ footer {
     color: #fff;
 }
 
+.span_footer {
+    font-size: 1.2rem;
+}
+
 .sci {
     position: relative;
     display: flex;
@@ -1037,7 +1046,6 @@ footer {
 }
 
 .maps {
-
     position: relative;
     width: 100%;
     margin-top: 36px;
@@ -1066,7 +1074,7 @@ footer {
 }
 
 .content_footer h1 {
-    background-color: #e91e63;
+    background-color: #e91e62b7;
     padding: 10px;
     margin-top: 0;
     border-radius: 10px;
@@ -1183,7 +1191,7 @@ footer {
 }
 
 .instagram:hover {
-    background: #c00a83;
+    background: #b61580;
 }
 
 .linkedin:hover {
