@@ -802,12 +802,15 @@ h2 {
     margin-top: 0;
     padding-top: .5em;
     background-color: #00000062;
+    color: #e91e63;
 }
 
-.trailer .trailer-title {
-    font-size: 4em;
+.trailer.trailer-title {
+    font-size: 1em;
     margin-bottom: 1em;
     font-family: sans-serif;
+    color: #590c2196;
+    text-align: center
 
 }
 
