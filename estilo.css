@@ -224,14 +224,7 @@ li {
 .article span {
     font-size: 2.2rem;
     color: #ec467e;
-    -webkit-text-stroke: 0.03125em #FFF;
-    text-stroke: 0.03125em #FFF;
-    text-shadow:
-        0 0px 10px #e992a5,
-        0 0px 20px #eeaab7,
-        0 0px 40px #d6a0ac,
-        0 0px 60px #c77a89ad,
-        0 0px 80px #faeff15b;
+    text-shadow: 0 0px 80px #faeff15b;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
